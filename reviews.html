@@ -1,0 +1,337 @@
+---
+title: 'Gallery'
+description: 'Allie the engineer- gallery'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'reviews/'
+eleventyNavigation:
+    key: Reviews
+    order: 400
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/reviews.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-top-bar">
+        <div class="cs-top-container">
+            <!--Nav Logo-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="\assets\images\logo.jpg" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
+            </a>
+            <div class="cs-contact-group">
+                <a class="cs-contact-link" href="Allie@rockinghamwebservices.com">
+                    <picture class="cs-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="\assets\images\message.jpg" alt="icon" width="24" height="24">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-header">Send A Message</span>
+                        <span class="cs-link-content">allie@rockinghamwebservices.com</span>
+                    </div>
+                </a>
+                <a class="cs-contact-link" href="mailto:Info@health&wellness.com">
+                    <picture class="cs-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="\assets\images\Vector.jpg" alt="icon" width="24" height="24">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-header">Visit Us At</span>
+                        <span class="cs-link-content">Rockingham, WA</span>
+                    </div>
+                </a>
+                <a href="/contact" class="cs-button-solid">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!--Wrapped the bottom container in a wrapper div so we can have a full width background color, and centered the container inside of it-->
+    <div class="cs-bottom-bar">
+        <div class="cs-container">
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="/index" class="cs-li-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/about" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/reviews" class="cs-li-link cs-active">
+                                Gallery
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/blog" class="cs-li-link">
+                                Blog
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">Gallery</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="\assets\images\Interior page - 712 (1).jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="\assets\images\Interior page - 712 (1).jpg">
+        <img loading="lazy" decoding="async" src="\assets\images\Interior page - 712 (1).jpg" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-1374">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Portfolio</span>
+            <h2 class="cs-title">Explore Some Websites Made by Allie and RWS</h2>
+            <p class="cs-text">
+                Every line of code is written by hand to ensure the best performance, which helps bring in more customers to website’s and ultimately more revenue
+            </p>
+        </div>
+        <ul class="cs-image-group">
+            <!-- Card 1 -->
+            <li class="cs-item">
+                <a href="https://femininesalesacademy.org/#:~:text=I%20found%20Feminine%20Sales%20Academy,purchase%20one%20of%20their%20products." class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="\assets\images\website cards (3).png">
+                        <source media="(min-width: 601px)" srcset="\assets\images\website cards (3).png">
+                        <img loading="lazy" decoding="async" src="\assets\images\website cards (3).png" alt="fancy house" width="346" height="346">
+                    </picture>
+                    <div class="cs-item-text">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Feminine Sales Academy Honest Review</h3>
+                            <span class="cs-desc">When I went to purchase this course I initially couldn’t find any reviews about it online....after my terrible experience I thought I’d 
+                                change that....I only quickly put it together so not super polished....</span>
+                        </div>
+                        <picture class="cs-icon-wrapper">
+                            <img class="cs-icon" decoding="async"
+                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                                            alt="arrow" width="413" height="374" aria-hidden="true">
+                        </picture>
+                    </div>
+                </a>
+            </li>
+            <!-- Card 2 -->
+            <li class="cs-item">
+                <a href="https://rockinghamwebservices.com/" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="\assets\images\website cards (4).png">
+                        <source media="(min-width: 601px)" srcset="\assets\images\website cards (4).png">
+                        <img loading="lazy" decoding="async" src="\assets\images\website cards (4).png" alt="modern house" width="346" height="346">
+                    </picture>
+                    <div class="cs-item-text">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Rockingham Web Services</h3>
+                            <span class="cs-desc">Of course I coded and put together the website for my own 
+                                Website Development business Rockingham Web Services PTY LTD</span>
+                        </div>
+                        <picture class="cs-icon-wrapper">
+                            <img class="cs-icon" decoding="async"
+                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                                            alt="arrow" width="413" height="374" aria-hidden="true">
+                        </picture>
+                    </div>
+                </a>
+            </li>
+            <!-- Card 3 -->
+            <li class="cs-item">
+                <a href="/" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="\assets\images\website cards (2).png">
+                        <source media="(min-width: 601px)" srcset="\assets\images\website cards (2).png">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="\assets\images\website cards (2).png" alt="modern home at night" width="346" height="346">
+                    </picture>
+                    <div class="cs-item-text">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Ally Bot (incoming)</h3>
+                            <span class="cs-desc">Website for information regarding the Mobile ALOHA robot</span>
+                        </div>
+                        <picture class="cs-icon-wrapper">
+                            <img class="cs-icon" decoding="async"
+                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                                            alt="arrow" width="413" height="374" aria-hidden="true">
+                        </picture>
+                    </div>
+                </a>
+            </li>
+            <!-- Card 4 -->
+            <li class="cs-item">
+                <a href="/" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="\assets\images\website cards (1).png">
+                        <source media="(min-width: 601px)" srcset="\assets\images\website cards (1).png">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="\assets\images\website cards (1).png" alt="modern home" width="346" height="346">
+                    </picture>
+                    <div class="cs-item-text">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Parkers Landscaping</h3>
+                            <span class="cs-desc">The first website ever coded by Rockingham Web Services</span>
+                        </div>
+                        <picture class="cs-icon-wrapper">
+                            <img class="cs-icon" decoding="async"
+                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                                            alt="arrow" width="413" height="374" aria-hidden="true">
+                        </picture>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-48">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Photos</span>
+            <h2 class="cs-title">Who is Allie?</h2>
+            <p class="cs-text">
+                Here’s some photos which show the friendly, bubbly and somewhat goofy nature of Allie the Electrical Engineer, showing some of her experiences and interests
+            </p>
+        </div>
+        <div class="cs-image-group">
+            <div class="cs-row cs-row-1">
+                <!-- Row 1-->
+                <picture class="cs-picture cs-picture-1">
+                    <source media="(max-width: 600px)" srcset="\assets\images\gallery photos (16).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\gallery photos (16).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\gallery photos (16).jpg" alt="new hallway" width="420" height="567">
+                </picture>
+                <picture class="cs-picture cs-picture-2">
+                    <source media="(max-width: 600px)" srcset="\assets\images\Image (5).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\Image (5).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\Image (5).jpg" alt="new home construction" width="420" height="630">
+                </picture>
+                <picture class="cs-picture cs-picture-3">
+                    <source media="(max-width: 600px)" srcset="\assets\images\gallery photos (14).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\gallery photos (14).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\gallery photos (14).jpg" alt="building a new wall" width="420" height="512">
+                </picture>
+                <picture class="cs-picture cs-picture-4">
+                    <source media="(max-width: 600px)" srcset="\assets\images\gallery photos (15).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\gallery photos (15).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\gallery photos (15).jpg" alt="building a new wall" width="420" height="512">
+                </picture>
+                <picture class="cs-picture cs-picture-5">
+                    <source media="(max-width: 600px)" srcset="\assets\images\gallery photos (9).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\gallery photos (9).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\gallery photos (9).jpg" alt="building a new wall" width="420" height="512">
+                </picture>
+                <picture class="cs-picture cs-picture-6">
+                    <source media="(max-width: 600px)" srcset="\assets\images\gallery photos (13).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\gallery photos (13).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\gallery photos (13).jpg" alt="building a new wall" width="420" height="512">
+                </picture>
+                <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+            </div>
+            <!-- Row 2 -->
+            <div class="cs-row cs-row-2">
+                <picture class="cs-picture cs-picture-1">
+                    <source media="(max-width: 600px)" srcset="\assets\images\Image (6).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\Image (6).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\Image (6).jpg" alt="new kitchen" width="420" height="492">
+                </picture>
+                <picture class="cs-picture cs-picture-2">
+                    <source media="(max-width: 600px)" srcset="\assets\images\gallery photos (18).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\gallery photos (18).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\gallery photos (18).jpg" alt="apartment addition" width="420" height="517">
+                </picture>
+                <picture class="cs-picture cs-picture-3">
+                    <source media="(max-width: 600px)" srcset="\assets\images\gallery photos (6).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\gallery photos (6).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\gallery photos (6).jpg" alt="kew kitchen cabinets" width="420" height="629">
+                </picture>
+                <picture class="cs-picture cs-picture-4">
+                    <source media="(max-width: 600px)" srcset="\assets\images\gallery photos (3).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\gallery photos (3).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\gallery photos (3).jpg" alt="kew kitchen cabinets" width="420" height="629">
+                </picture>
+                <picture class="cs-picture cs-picture-5">
+                    <source media="(max-width: 600px)" srcset="\assets\images\gallery photos (17).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\gallery photos (17).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\gallery photos (17).jpg" alt="kew kitchen cabinets" width="420" height="629">
+                </picture>
+                <picture class="cs-picture cs-picture-6">
+                    <source media="(max-width: 600px)" srcset="\assets\images\gallery photos (5).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\gallery photos (5).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\gallery photos (5).jpg" alt="kew kitchen cabinets" width="420" height="629">
+                </picture>
+                <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+            </div>
+            <!-- Row 3 -->
+            <div class="cs-row cs-row-3">
+                <picture class="cs-picture cs-picture-1">
+                    <source media="(max-width: 600px)" srcset="\assets\images\gallery photos (8).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\gallery photos (8).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\gallery photos (8).jpg" alt="new black window structure" width="420" height="625">
+                </picture>
+                <picture class="cs-picture cs-picture-2">
+                    <source media="(max-width: 600px)" srcset="\assets\images\gallery photos (12).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\gallery photos (12).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\gallery photos (12).jpg" alt="kitchen rebovation" width="420" height="452">
+                </picture>
+                <picture class="cs-picture cs-picture-3">
+                    <source media="(max-width: 600px)" srcset="\assets\images\gallery photos (2).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\gallery photos (2).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\gallery photos (2).jpg" alt="bathroom renovation" width="420" height="629">
+                </picture>
+                <picture class="cs-picture cs-picture-4">
+                    <source media="(max-width: 600px)" srcset="\assets\images\gallery photos (7).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\gallery photos (7).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\gallery photos (7).jpg" alt="bathroom renovation" width="420" height="629">
+                </picture>
+                <picture class="cs-picture cs-picture-5">
+                    <source media="(max-width: 600px)" srcset="\assets\images\gallery photos (11).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\gallery photos (11).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\gallery photos (11).jpg" alt="bathroom renovation" width="420" height="629">
+                </picture>
+                <picture class="cs-picture cs-picture-6">
+                    <source media="(max-width: 600px)" srcset="\assets\images\gallery photos (1).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\gallery photos (1).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\gallery photos (1).jpg" alt="bathroom renovation" width="420" height="629">
+                </picture>
+                <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

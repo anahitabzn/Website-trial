@@ -1,0 +1,363 @@
+---
+title: 'Allie the engineer - homepage'
+description: 'Allie the engineer'
+preloadImg: '/assets/images/landing.jpg'
+permalink: '/'
+tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Allie the Engineer">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="theme-color" content="#ffffff">
+<title>Allie the Engineer</title>
+
+    <link rel="stylesheet" href="/assets/css/local.css"/>
+    <link rel="stylesheet" href="/assets/css/critical.css"/>
+
+    <!-- Script for Netlify Identity -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script defer>
+        if (window.netlifyIdentity) {
+            window
+                .netlifyIdentity
+                .on('init', (user) => {
+                    if (!user) {
+                        window
+                            .netlifyIdentity
+                            .on('login', () => {
+                                document.location.href = '/admin/';
+                            });
+                    }
+                });
+        }
+    </script>
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                 Navigation-bar                 -->
+<!-- ============================================ -->
+<!-- added the navigation bar at the start of every page so the page is set to cs-active when the user has clicked on the page-->
+<header id="cs-navigation">
+    <div class="cs-top-bar">
+        <div class="cs-top-container">
+            <!--Nav Logo-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="\assets\images\logo.jpg" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
+            </a>
+            <div class="cs-contact-group">
+                <a class="cs-contact-link" href="Allie@rockinghamwebservices.com">
+                    <picture class="cs-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="\assets\images\message.jpg" alt="icon" width="24" height="24">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-header">Send A Message</span>
+                        <span class="cs-link-content">allie@rockinghamwebservices.com</span>
+                    </div>
+                </a>
+                <a class="cs-contact-link" href="mailto:allie@rockinghamwebservices.com">
+                    <picture class="cs-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="\assets\images\Vector.jpg" alt="icon" width="24" height="24">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-header">Visit Us At</span>
+                        <span class="cs-link-content">Rockingham, WA</span>
+                    </div>
+                </a>
+                <a href="/contact" class="cs-button-solid">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!--Wrapped the bottom container in a wrapper div so we can have a full width background color, and centered the container inside of it-->
+    <div class="cs-bottom-bar">
+        <div class="cs-container">
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="/index" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/about" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/reviews" class="cs-li-link">
+                                Gallery
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/blog" class="cs-li-link">
+                                Blog
+                            </a>
+                        </li> 
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- ============================================ -->
+<!--                   Hero                       -->
+<!-- ============================================ -->
+
+<section id="hero-408">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title"><span class="cs-color">Freedom for myself and other women</span> </h2>
+            <p class="cs-text">
+                ...through the commercialisation of cooking robots, Allie’s 20 year goal is that every house should have a robot.<br><br>
+                これからMobile ALOHA (サービスロボット) のビジネスを手掛ける予定です。
+            </p>
+            <a href="/contact" class="cs-button-solid">Get in contact</a>
+            <a href="/about" class="cs-button-transparent">About</a>
+            <span class="cs-header">Proud volunteer/Supporter of:</span>
+            <div class="cs-logo-group">
+                <!--Logo 1-->
+                <img class="cs-logo" src="/assets/images/Frame 13.jpg" alt="logo" width="113" height="31" decoding="async">
+               
+            </div>
+        </div>
+        <div class="cs-stat-group">
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="/assets/images/image.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/image.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/image.jpg" alt="leaves" width="842" height="737" aria-hidden="true">
+            </picture>
+        </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-317">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="\assets\images\Rectangle 34.jpg">
+            <source media="(min-width: 601px)" srcset="\assets\images\Rectangle 34.jpg">
+            <img loading="lazy" decoding="async" src="\assets\images\Rectangle 34.jpg" alt="consult" width="520" height="680" aria-hidden="true">
+        </picture>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">About | アリーについて</span>
+            <h2 class="cs-title">Allie the Electrical Engineer | エンジニアのアリー</h2>
+            <p class="cs-text">
+                Allie studied Electrical Engineering with a specialisation in Computer at The University of Sydney (USYD) and graduated as a Daylell Scholar with First Class Honours（優等学位）.<br><br>Upon graduating she worked as a Weapons Electrical Engineer in the Royal Australian Navy, after being sexually harrassed she left and joined BAE systems as a Data Modeller. Afterwards started her own business Rockingham Web Services as she noticed a lack of quality website developers in Rockingham combined with a desire for freedom to live the life she has always wanted....full of afternoon naps.<br><br>シドニー大学で電子工学を学びました、専門がコンピュータです。大学生に対してウェブデザインも指導しました<br><br> 海軍でエンジニアとして4年間の経験が貴重なものでした。その後BAE Systemsで経験もあります。そして今はウェブサイトの開発をしています。これからMobile ALOHA (サービスロボット) のビジネスを手掛ける予定です。
+            </p>
+            <a class="cs-button-solid" aria-label="learn more about our programs" href="/about">Learn More</a>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-368">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">Companies managed by Allie service three main areas</h2>
+            <p class="cs-text">
+                To help provide these services, Allie focuses on hiring women and providing Women in Tech a flexible, safe and innovative place to work and thrive. This is especially important after finding out supposedly 50% of Women in Tech leave after 2 years.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <div class="cs-icon-wrapper">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="\assets\images\website-icon-services-368.jpg" alt="icon" width="48" height="48">
+                    </div>
+                    <h3 class="cs-h3">Website Development</h3>
+                    <p class="cs-item-text">
+                        We provides hand coded websites to enable speed, flexibility and freedom from the whims of large website builder’s prices and development procedures
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item cs-item-middle">
+                <a href="" class="cs-link">
+                    <div class="cs-icon-wrapper">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="\assets\images\service-368-software-white 1 (1).png" alt="icon" width="48" height="48">
+                    </div>
+                    <h3 class="cs-h3 cs-h3-middle">Software Development</h3>
+                    <p class="cs-item-text cs-item-text-middle">
+                        Have a web app you’d like built? As an Australian based company we hire local Australians to build applications to ensure quality and eligibility for Australian Government grants
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <div class="cs-icon-wrapper">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="\assets\images\service-368-robot-coloured 1.jpg" alt="icon" width="48" height="48">
+                    </div>
+                    <h3 class="cs-h3">Robot As A Service</h3>
+                    <p class="cs-item-text">
+                        Utilising the Mobile ALOHA robot, an upcoming service is the rental of this robot to assist with cooking and household chores. 
+                    </p>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</section>
+
+ <!-- ============================================ -->
+<!--                   Blog- Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-1508">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Blog</span>
+            <div class="cs-title-button-wrapper">
+                <h2 class="cs-title">Get the latest on Allie’s Blog</h2>
+                <a href="/blog" class="cs-button-solid">View All</a>
+            </div>
+        </div>
+        <!--Picture 1-->
+        <div class="cs-picture-group">
+            <picture class="cs-image">
+                <source media="(max-width: 600px)"
+                        srcset="\assets\images\Image (7).jpg">
+                <source media="(min-width: 601px)"
+                        srcset="\assets\images\Image (7).jpg">
+                <img loading="lazy" decoding="async"
+                        src="\assets\images\Image (7).jpg"
+                        height="400" height="400" alt="day care">
+                        <div class="cs-date">29th Aug, 2024</div>
+            </picture>
+            <div class="cs-info">
+                <h3 class="cs-h3">What Allie’s First Six Months of Running a Business has been Like</h3>
+                <p class="cs-item-text">Within the first 6 months I have travelled to Sydney and Japan for networking, hired and fired an intern, fired a client and given a refund, been sued for defamation and kicked from a government funded Women in Business course and my net $$$ made is.....</p>
+            </div>
+        </div>
+        <!--Picture 2-->
+        <div class="cs-picture-group">
+            <picture class="cs-image">
+                <source media="(max-width: 600px)"
+                        srcset="\assets\images\Image (8).jpg">
+                <source media="(min-width: 601px)"
+                        srcset="\assets\images\Image (8).jpg">
+                <img loading="lazy" decoding="async"
+                        src="\assets\images\Image (8).jpg"
+                        height="400" height="400" alt="day care">
+                        <div class="cs-date">30th Sep, 2024</div>
+            </picture>
+            <div class="cs-info">
+                <h3 class="cs-h3">My Theory on Why Japan is Leading The Way in Tech</h3>
+                <p class="cs-item-text">In May 2024 when I visited Japan, I met a man who told me reason why Japan has managed to have such advanced technology is because unlike the West, tech companies in Japan work with the government...not against it....</p>
+            </div>
+            
+        </div>
+        <!--Picture 3-->
+        <div class="cs-picture-group">
+            <picture class="cs-image">
+                <source media="(max-width: 600px)"
+                        srcset="\assets\images\guys.png">
+                <source media="(min-width: 601px)"
+                        srcset="\assets\images\guys.png">
+                <img loading="lazy" decoding="async"
+                        src="\assets\images\guys.png"
+                        height="400" height="400" alt="day care">
+                        <div class="cs-date">30th Nov, 2024</div>
+            </picture>
+            <div class="cs-info">
+                <h3 class="cs-h3">How to Survive Being a Woman in a Male Dominated Environment</h3>
+                <p class="cs-item-text">When I was in 4th year Electrical Engineering, there were a number of tutorials where I was the only woman in the class...in the Navy out of 40 engineers on course with me, only 4 of them were women....here’s what I learnt.....</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-453">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Portfolio and photos</span>
+                <h2 class="cs-title">Gallery of Allie</h2>
+            </div>
+            <div class="cs-button-group">
+                <!--When adding extra galleries, copy and paste the button and make data-filter equal to four, then five, etc. Do the same for the corresponding gallery and it's data attribute-->
+                <button class="cs-button" data-filter="one">
+                    Allie
+                </button>
+                <button class="cs-button" data-filter="two">
+                    Events
+                </button>
+                <button class="cs-button" data-filter="three">
+                    Japan
+                </button>
+            </div>
+        </div>
+        <div class="cs-wrapper">
+            <!--Gallery 1-->
+            <div class="cs-gallery" data-category="one">
+                <!--Picture 1-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="\assets\images\Image (3).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\Image (3).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\Image (3).jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 2-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="\assets\images\Image (4).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\Image (4).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\Image (4).jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 3-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="\assets\images\Image (5).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\Image (5).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\Image (5).jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 4-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="\assets\images\Image (6).jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\Image (6).jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\Image (6).jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <div class="cs-button-solid-container">
+                    <a href="/reviews" class="cs-button-solid">View full gallery</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

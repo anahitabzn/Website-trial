@@ -1,0 +1,75 @@
+<!-- ============================================ -->
+<!--                 Navigation-bar                 -->
+<!-- ============================================ -->
+<!-- added the navigation bar at the start of every page so the page is set to cs-active when the user has clicked on the page-->
+<header id="cs-navigation">
+    <div class="cs-top-bar">
+        <div class="cs-top-container">
+            <!--Nav Logo-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="\assets\images\logo.jpg" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
+            </a>
+            <div class="cs-contact-group">
+                <a class="cs-contact-link" href="Allie@rockinghamwebservices.com">
+                    <picture class="cs-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="\assets\images\message.jpg" alt="icon" width="24" height="24">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-header">Send A Message</span>
+                        <span class="cs-link-content">allie@rockinghamwebservices.com</span>
+                    </div>
+                </a>
+                <a class="cs-contact-link" href="mailto:allie@rockinghamwebservices.com">
+                    <picture class="cs-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="\assets\images\Vector.jpg" alt="icon" width="24" height="24">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-header">Visit Us At</span>
+                        <span class="cs-link-content">Rockingham, WA</span>
+                    </div>
+                </a>
+                <a href="/contact" class="cs-button-solid">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!--Wrapped the bottom container in a wrapper div so we can have a full width background color, and centered the container inside of it-->
+    <div class="cs-bottom-bar">
+        <div class="cs-container">
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="/index" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/about" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/reviews" class="cs-li-link">
+                                Gallery
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/blog" class="cs-li-link">
+                                Blog
+                            </a>
+                        </li> 
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>

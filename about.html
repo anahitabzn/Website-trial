@@ -1,0 +1,139 @@
+---
+title: 'About allie the engineer'
+description: 'who is allie'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-top-bar">
+        <div class="cs-top-container">
+            <!--Nav Logo-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="\assets\images\logo.jpg" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
+            </a>
+            <div class="cs-contact-group">
+                <a class="cs-contact-link" href="Allie@rockinghamwebservices.com">
+                    <picture class="cs-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="\assets\images\message.jpg" alt="icon" width="24" height="24">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-header">Send A Message</span>
+                        <span class="cs-link-content">allie@rockinghamwebservices.com</span>
+                    </div>
+                </a>
+                <a class="cs-contact-link" href="mailto:Info@health&wellness.com">
+                    <picture class="cs-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="\assets\images\Vector.jpg" alt="icon" width="24" height="24">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-header">Visit Us At</span>
+                        <span class="cs-link-content">Rockingham, WA</span>
+                    </div>
+                </a>
+                <a href="/contact" class="cs-button-solid">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!--Wrapped the bottom container in a wrapper div so we can have a full width background color, and centered the container inside of it-->
+    <div class="cs-bottom-bar">
+        <div class="cs-container">
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="/index" class="cs-li-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/about" class="cs-li-link cs-active">
+                                About
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/reviews" class="cs-li-link">
+                                Gallery
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/blog" class="cs-li-link">
+                                Blog
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">About Allie the Electrical Engineer</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="\assets\images\Interior page - 712 (1).jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="\assets\images\Interior page - 712 (1).jpg">
+        <img loading="lazy" decoding="async" src="\assets\images\Interior page - 712 (1).jpg" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-317">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="\assets\images\Rectangle 34.jpg">
+            <source media="(min-width: 601px)" srcset="\assets\images\Rectangle 34.jpg">
+            <img loading="lazy" decoding="async" src="\assets\images\Rectangle 34.jpg" alt="consult" width="520" height="680" aria-hidden="true">
+        </picture>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">About | アリーについて</span>
+            <h2 class="cs-title">Allie the Electrical Engineer | エンジニアのアリー</h2>
+            <p class="cs-text">
+                Allie studied Electrical Engineering with a specialisation in Computer at The University of Sydney (USYD) and graduated as a Daylell Scholar with First Class Honours（優等学位）.<br><br>Upon graduating she worked as a Weapons Electrical Engineer in the Royal Australian Navy, after being sexually harrassed she left and joined BAE systems as a Data Modeller. Afterwards started her own business Rockingham Web Services as she noticed a lack of quality website developers in Rockingham combined with a desire for freedom to live the life she has always wanted....full of afternoon naps.<br><br>シドニー大学で電子工学を学びました、専門がコンピュータです。大学生に対してウェブデザインも指導しました<br><br> 海軍でエンジニアとして4年間の経験が貴重なものでした。その後BAE Systemsで経験もあります。そして今はウェブサイトの開発をしています。これからMobile ALOHA (サービスロボット) のビジネスを手掛ける予定です。
+            </p>
+            <a class="cs-button-solid" aria-label="learn more about our programs" href="">Learn More</a>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

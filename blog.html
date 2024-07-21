@@ -1,0 +1,183 @@
+---
+title: 'Allie the engineer- Blog'
+description: 'check out our blogs'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'blog/'
+eleventyNavigation:
+    key: Blog
+    order: 500
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/blog.css">
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-top-bar">
+        <div class="cs-top-container">
+            <!--Nav Logo-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="\assets\images\logo.jpg" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
+            </a>
+            <div class="cs-contact-group">
+                <a class="cs-contact-link" href="Allie@rockinghamwebservices.com">
+                    <picture class="cs-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="\assets\images\message.jpg" alt="icon" width="24" height="24">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-header">Send A Message</span>
+                        <span class="cs-link-content">allie@rockinghamwebservices.com</span>
+                    </div>
+                </a>
+                <a class="cs-contact-link" href="mailto:Info@health&wellness.com">
+                    <picture class="cs-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="\assets\images\Vector.jpg" alt="icon" width="24" height="24">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-header">Visit Us At</span>
+                        <span class="cs-link-content">Rockingham, WA</span>
+                    </div>
+                </a>
+                <a href="/contact" class="cs-button-solid">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!--Wrapped the bottom container in a wrapper div so we can have a full width background color, and centered the container inside of it-->
+    <div class="cs-bottom-bar">
+        <div class="cs-container">
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="/index" class="cs-li-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/about" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/reviews" class="cs-li-link">
+                                Gallery
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/blog" class="cs-li-link cs-active">
+                                Blog
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">Blog</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="\assets\images\Interior page - 712 (1).jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="\assets\images\Interior page - 712 (1).jpg">
+        <img loading="lazy" decoding="async" src="\assets\images\Interior page - 712 (1).jpg" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+   <!-- ============================================ -->
+<!--                   Blog- Gallery                    -->
+<!-- ============================================ -->
+
+<!-- ============================================ -->
+<!--                   Blog- Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-1508">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Blog</span>
+            <div class="cs-title-button-wrapper">
+                <h2 class="cs-title">Get the latest on Allie’s Blog</h2>
+                <a href="" class="cs-button-solid">View All</a>
+            </div>
+        </div>
+        <!--Picture 1-->
+        <div class="cs-picture-group">
+            <picture class="cs-image">
+                <source media="(max-width: 600px)"
+                        srcset="\assets\images\Image (7).jpg">
+                <source media="(min-width: 601px)"
+                        srcset="\assets\images\Image (7).jpg">
+                <img loading="lazy" decoding="async"
+                        src="\assets\images\Image (7).jpg"
+                        height="400" height="400" alt="day care">
+                        <div class="cs-date">29th Aug, 2024</div>
+            </picture>
+            <div class="cs-info">
+                <h3 class="cs-h3">What Allie’s First Six Months of Running a Business has been Like</h3>
+                <p class="cs-item-text">Within the first 6 months I have travelled to Sydney and Japan for networking, hired and fired an intern, fired a client and given a refund, been sued for defamation and kicked from a government funded Women in Business course and my net $$$ made is.....</p>
+            </div>
+        </div>
+        <!--Picture 2-->
+        <div class="cs-picture-group">
+            <picture class="cs-image">
+                <source media="(max-width: 600px)"
+                        srcset="\assets\images\Image (8).jpg">
+                <source media="(min-width: 601px)"
+                        srcset="\assets\images\Image (8).jpg">
+                <img loading="lazy" decoding="async"
+                        src="\assets\images\Image (8).jpg"
+                        height="400" height="400" alt="day care">
+                        <div class="cs-date">30th Sep, 2024</div>
+            </picture>
+            <div class="cs-info">
+                <h3 class="cs-h3">My Theory on Why Japan is Leading The Way in Tech</h3>
+                <p class="cs-item-text">In May 2024 when I visited Japan, I met a man who told me reason why Japan has managed to have such advanced technology is because unlike the West, tech companies in Japan work with the government...not against it....</p>
+            </div>
+            
+        </div>
+        <!--Picture 3-->
+        <div class="cs-picture-group">
+            <picture class="cs-image">
+                <source media="(max-width: 600px)"
+                        srcset="\assets\images\guys.png">
+                <source media="(min-width: 601px)"
+                        srcset="\assets\images\guys.png">
+                <img loading="lazy" decoding="async"
+                        src="\assets\images\guys.png"
+                        height="400" height="400" alt="day care">
+                        <div class="cs-date">30th Nov, 2024</div>
+            </picture>
+            <div class="cs-info">
+                <h3 class="cs-h3">How to Survive Being a Woman in a Male Dominated Environment</h3>
+                <p class="cs-item-text">When I was in 4th year Electrical Engineering, there were a number of tutorials where I was the only woman in the class...in the Navy out of 40 engineers on course with me, only 4 of them were women....here’s what I learnt.....</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
